@@ -1,0 +1,129 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+.h1,
+h1 {
+    font-size: 36px
+}
+
+.h2,
+h2 {
+    font-size: 30px
+}
+
+.h3,
+h3 {
+    font-size: 24px
+}
+
+.h4,
+h4 {
+    font-size: 18px
+}
+
+.h5,
+h5 {
+    font-size: 14px
+}
+
+.h6,
+h6 {
+    font-size: 12px
+}
+
+.navbar {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    background-color: transparent
+}
+
+ul,
+ol {
+    list-style: none;
+    display: block
+}
+
+ul li {
+    padding: 10px
+}
+
+a,
+a:hover {
+    text-decoration: none
+}
+
+.center {
+    text-align: center;
+}
+
+.a-center {
+    align-items: center
+}
+
+.cap {
+    text-transform: capitalize
+}
+
+.uppercase {
+    text-transform: uppercase
+}
+
+.lowercase {
+    text-transform: lowercase
+}
+
+.oblique {
+    text-transform: oblique;
+}
+
+.left {
+    float: left
+}
+
+.right {
+    float: right
+}
+
+.justify {
+    text-align: justify
+}
+
+.flex {
+    display: flex
+}
+
+.margin {
+    margin: 20px 0
+}
+
+.pad {
+    padding: 20px;
+}
+
+
+.line::after {
+    content: "";
+    display: block;
+    width: 0%;
+    height: 2px;
+    margin: auto;
+    background: #fff;
+    transition: width 0.5s
+}
+
+.line:hover::after {
+    width: 100%
+}
+
+.btn {
+    padding: 10px 20px;
+    border: none;
+    outline: 1px solid;
+    outline: none
+}

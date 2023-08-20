@@ -1,0 +1,303 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins&display=swap');
+
+/* font-family: 'Pacifico', cursive;
+font-family: 'Poppins', sans-serif; */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    /* background: #11635f; */
+    box-sizing: border-box;
+    background: #dee2e6;
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    height: 100vh;
+    background: url(/easy/image/pexels-jean-van-der-meulen-1457841.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.navbar {
+    justify-content: space-between;
+}
+
+nav {
+    display: flex;
+}
+
+nav h3 {
+    cursor: none;
+    font-weight: 600;
+}
+
+nav ul li a {
+    color: #222;
+    font-weight: 600;
+}
+
+.main-head {
+    margin-top: 15%;
+    align-items: center;
+    text-align: center;
+}
+
+.main-head h1 {
+    width: 60%;
+    margin: auto;
+    text-transform: capitalize;
+    line-height: 2;
+    font-size: 45px;
+    font-family: 'Pacifico', cursive;
+    text-shadow: 1px 1px 1px#62f6ff;
+}
+
+.main-head p {
+    font-size: 22px;
+    font-style: oblique;
+    line-height: 1;
+    margin: auto;
+    padding: 5px;
+    background: #00000047;
+    border-radius: 10px;
+    color: #f1f1f1;
+    width: 50%;
+
+}
+
+.main-head .btn {
+    padding: 15px 100px;
+    outline: 1px solid #62f6ff;
+    border-radius: 10px;
+    border: none;
+    background: transparent;
+    color: #62f6ff;
+    margin-top: 10px;
+}
+
+.fa-solid {
+    margin-right: 10px;
+}
+
+.fa {
+    background: #00000047;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.fa,
+.fa-solid {
+    color: #62f6ff;
+    opacity: 0.9;
+}
+
+a .fa:hover,
+.line:hover .fa-solid {
+    color: #4ddad3;
+    opacity: 1;
+}
+
+
+.main-head .btn:hover {
+    background: #62f6ff;
+    color: #fff;
+}
+
+/* slider section */
+.slide-container {
+    max-width: 1120px;
+    width: 100%;
+    padding: 40px 0;
+}
+
+.slide-content {
+    margin: 0 40px;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.card {
+    background: #fff;
+    border-radius: 30px;
+    margin-right: 20px;
+}
+
+.image-content,
+.card-content {
+    display: flex;
+    padding: 10px 14px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image-content {
+    position: relative;
+}
+
+.overlay {
+    background: #3f9995;
+    top: 0%;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 25px 25px 0 25px;
+}
+
+.overlay::before,
+.overlay::after {
+    content: '';
+    right: 0;
+    bottom: -20px;
+    height: 20px;
+    width: 20px;
+    background: #3f9995;
+    position: absolute;
+}
+
+.overlay::after {
+    border-radius: 0 25px 0 0;
+    background: #fff;
+}
+
+.card-image {
+    position: relative;
+    border-radius: 20px;
+    background: #222;
+    padding: 3px;
+    width: 200px;
+    height: 150px;
+}
+
+.card-image .card-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    border: 2px solid gold;
+}
+
+.title {
+    color: #11635f;
+}
+
+.desc {
+    font-size: 14px;
+    text-align: center;
+    color: #6c757d;
+}
+
+.card-content .btn {
+    padding: 8px 30px;
+    margin: 14px;
+    font-size: 16px;
+    border-radius: 6px;
+    background: #11635f;
+    color: #fff;
+    opacity: .9;
+    transition: all .3s ease;
+}
+
+.card-content .btn:hover {
+    background: #11635f;
+    opacity: 1;
+}
+
+.swiperBtn {
+    color: #159aa1;
+}
+
+.swiperBtn:hover {
+    color: #4ddad3;
+}
+
+.swiper-button-next {
+    right: 0;
+}
+
+.swiper-button-prev {
+    left: 0;
+}
+
+.swiper-pagination-bullet {
+    color: #62f6ff;
+}
+
+.swiper-pagination-bullet-active {
+    background: #11635f;
+}
+
+/* carousel section */
+#carousel {
+    background: #11635f;
+    color: #fff;
+    margin-top: 40px;
+}
+
+#carousel img {
+    width: 60%;
+    height: 400px;
+    margin-left: 10px;
+    border-radius: 10px;
+}
+
+#carousel .carousel-text {
+    margin: 100px 0;
+}
+
+#carousel h2 {
+    font-weight: bold;
+
+}
+
+#carousel p {
+    color: #dee2e6;
+    font-size: 14px;
+    width: 35%;
+}
+
+.container {
+    position: relative;
+    max-width: 800px;
+    width: 100%;
+    margin: 10px auto;
+}
+
+.container img {
+    vertical-align: middle;
+    height: 400px;
+    width: 100%;
+}
+
+.container .content {
+    position: absolute;
+    bottom: 0;
+    width: 96%;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    padding: 20px;
+}
+
+.content h3 {
+    color: #62f6ff;
+}
+
+
+/* media query */
+@media screen and (max-width:768px) {
+    .slide-content {
+        margin: 0 10px;
+    }
+
+    .swiperBtn {
+        display: none
+    }
+}
