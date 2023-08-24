@@ -14,15 +14,21 @@ var swiper = new Swiper('.slide-content', {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev'
     },
-    breakpoints:{
-    0: {
-        slidesPerView: 1,
+    breakpoints: {
+        0: {
+            slidesPerView: 1,
+        },
+        520: {
+            slidesPerView: 2,
+        },
+        950: {
+            slidesPerView: 3,
+        },
     },
-    520: {
-        slidesPerView: 2,
-    },
-    950: {
-        slidesPerView: 3,
-    },
-},
 })
+function openNav() {
+    document.getElementById('myNav').style.height = '60%'
+}
+function closeNav() {
+    document.getElementById('myNav').style.height = 0
+}

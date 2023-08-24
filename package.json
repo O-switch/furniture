@@ -1,0 +1,14 @@
+{
+  "name": "furniture",
+  "version": "1.0.0",
+  "description": "furniture website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "furniture"
+  ],
+  "author": "Oriem Switch",
+  "license": "ISC"
+}
