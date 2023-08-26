@@ -27,8 +27,14 @@ var swiper = new Swiper('.slide-content', {
     },
 })
 function openNav() {
-    document.getElementById('myNav').style.height = '60%'
+    document.getElementById('myNav').style.height = '50%'
 }
 function closeNav() {
     document.getElementById('myNav').style.height = 0
 }
+// $("#myNav").blur(function () {
+//     var height = '60%'
+//     if (height < '60%') {
+//         document.getElementById('myNav').style.height = 0
+//     }
+// });

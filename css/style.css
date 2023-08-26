@@ -20,7 +20,7 @@ body {
 
 header {
     height: 100vh;
-    background: url('/image/pexels-jean-van-der-meulen-1457841.jpg');
+    background-image: url('/image/pexels-jean-van-der-meulen-1457841.jpg');
     background-position: center;
     background-size: cover;
 }
@@ -75,8 +75,6 @@ nav ul li a {
 .main-head .btn {
     padding: 15px 100px;
     outline: 1px solid #62f6ff;
-    border-radius: 10px;
-    border: none;
     background: transparent;
     color: #62f6ff;
     margin-top: 10px;
@@ -308,6 +306,9 @@ a .fa:hover,
     text-align: center;
     padding: 10px;
 }
+.t-card:hover{
+    box-shadow: 0 4px 8px 0 rgb(17 99 95);
+}
 
 .column img {
     width: 30%;
@@ -326,61 +327,87 @@ a .fa:hover,
     display: table;
 }
 
-.footer{
+.footer {
     background: #11635f;
     color: #fff;
-    height: 20vh;
-
 }
+
+.foot-head {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.foot-head ul li a,.foot-head ul li {
+    color: #fff;
+}
+
+.foot-head ul li a:hover,.foot-head ul li:hover {
+    color: #ced4da;
+}
+
 .help-overlay {
-  height: 60%;
-  width: 100%;
-  position: fixed;
-  z-index: 1;
-  bottom: 0;
-  left: 0;
-  background-color: rgb(0,0,0);
-  background-color: rgba(0,0,0, 0.9);
-  overflow-x: hidden;
-  transition: 0.5s;
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s ease;
 }
 
 .overlay-content {
-  position: relative;
-  top: 25%;
-  width: 100%;
-  text-align: center;
-  margin-top: auto;
+    position: relative;
+    top: 25%;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    margin-top: auto;
 }
 
 .help-overlay a {
-  padding: 8px;
-  text-decoration: none;
-  font-size: 36px;
-  color: #818181;
-  display: block;
-  transition: 0.3s;
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
 }
 
-.help-overlay a:hover, .overlay a:focus {
-  color: #f1f1f1;
+.help-overlay a:hover,
+.overlay a:focus {
+    color: #f1f1f1;
 }
 
 .help-overlay .closebtn {
-  position: absolute;
-  top: 20px;
-  right: 45px;
-  font-size: 60px;
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+.social-icon a {
+    color: #fff;
+    padding: 10px;
+}
+.social-icon a:hover{
+    color: #6c757d;
 }
 
 @media screen and (max-height: 450px) {
-  .help-overlay a {font-size: 20px}
-  .help-overlay .closebtn {
-  font-size: 40px;
-  top: 15px;
-  right: 35px;
-  }
+    .help-overlay a {
+        font-size: 20px
+    }
+
+    .help-overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
 }
+
 /* media query */
 @media screen and (max-width: 650px) {
     .column {
