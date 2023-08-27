@@ -32,9 +32,3 @@ function openNav() {
 function closeNav() {
     document.getElementById('myNav').style.height = 0
 }
-// $("#myNav").blur(function () {
-//     var height = '60%'
-//     if (height < '60%') {
-//         document.getElementById('myNav').style.height = 0
-//     }
-// });
