@@ -21,7 +21,7 @@ body {
 header {
     height: 100vh;
     width: 100%;
-    background-image: url('/image/pexels-jean-van-der-meulen-1457841.jpg');
+    background-image: url("/image/pexels-jean-van-der-meulen-1457841.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -402,6 +402,7 @@ a .fa:hover,
     color: #6c757d;
 }
 
+/* media query */
 @media screen and (max-height: 450px) {
     .help-overlay a {
         font-size: 20px
@@ -414,7 +415,6 @@ a .fa:hover,
     }
 }
 
-/* media query */
 @media screen and (max-width: 650px) {
     .column {
         width: 100%;
@@ -430,4 +430,14 @@ a .fa:hover,
     .swiperBtn {
         display: none
     }
+}
+
+
+
+/* about section */
+.about h1{
+    color: #11635f;
+}
+.about p {
+    color: #6c757d;
 }
